@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="shop.html">
+    <link rel="stylesheet" href="clicker.css">
+    <title>mian/404 Game</title>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                <audio id="mysound" controls  src="sounds/Sia - Snowman (cover by Bongo Cat).mp3" style="float: left;"></audio>
+            </div>
+            <div class="col-sm-6">
+                <button style="float: right; margin-top: 0%; background-color: white; color: black;" ><a href="aboutUs.html" target="_blank">About the game</a></button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4 col-md-4">
+                <h1>State</h1>
+                <p>
+                    Spin: <span id="no_of_spin">0</span><br>
+                    Party: <span id="no_of_party">0</span><br>
+                    Money: <span id="no_of_money">0</span><br>
+                    Party Cost: $<span id="cost_of_party">10</span><br>
+                    Spin Upgrade Cost: $<span id="cost_of_spin_upgrade">50</span><br>
+                    Interval Upgrade Cost: $<span id="cost_of_interval_upgrade">100</span>
+                </p> 
+            </div>
+            <div class="col-sm-4 col-md-4">
+                <img onclick="makespin()" id="test" src="img/tester-removebg-preview.png" width="90%" alt="Spinner Image (click to spin)" draggable="false">
+            </div>
+            <div class="col-sm-4 col-md-4">
+                <h1>Shop</h1>
+                <button onclick="hirevibe()">Hire the vibe <span id="cow"></span></button>
+                <button onclick="buySpinUpgrade()">Buy Spin Upgrade</button>
+                <button onclick="buyIntervalUpgrade()">Buy Interval Upgrade</button>
+                <button onclick="convertTomoney()">Sell Spin</button>
+                <button onclick="rest()">Reset</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <p>
+                    &reg; coding__404_
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="clicker.js"></script>
+</body>
+</html>
